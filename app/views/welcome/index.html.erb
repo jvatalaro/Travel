@@ -1,5 +1,5 @@
 <!--<h1>Welcome#index</h1>-->
-<h1>Welcome to my Travel Site</h1>
+<h1 class="oswald">Welcome to my Travel Site</h1>
 <!--<p>Find me in app/views/welcome/index.html.erb</p>-->
 <p>You'll find all sorts of travel stuff here.</p>
 
@@ -15,13 +15,13 @@
 
 <p>
 	<% @images.each do |image| %>
-		<%= image_tag image, alt: image, class: "travel-pics" %>
+		<%= image_tag image, alt: image, class: "travel-pics img-responsive" %>
 	<% end %>
 </p>
 
 <p>
 	<% @picture_hash.each do |key, value| %>
-		<%= image_tag key, alt: value, class: "travel-pics" %>
+		<%= image_tag key, alt: value, class: "travel-pics img-responsive" %>
 	<% end %>
 </p>
 
